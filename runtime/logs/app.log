@@ -1,0 +1,314 @@
+2017-07-10 08:57:51 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'imooc_shop'' in D:\phpstudy\jason\vendor\yiisoft\yii2\db\Connection.php:600
+Stack trace:
+#0 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Connection.php(600): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#3 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#6 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#8 D:\phpstudy\jason\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#9 D:\phpstudy\jason\models\Category.php(105): yii\db\ActiveQuery->all()
+#10 D:\phpstudy\jason\controllers\CommonController.php(15): app\models\Category::getMenu()
+#11 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Object.php(107): app\controllers\CommonController->init()
+#12 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Controller.php(84): yii\base\Object->__construct('[]')
+#13 [internal function]: yii\base\Controller->__construct('<span class="st...', Object(yii\web\Application), '[]')
+#14 D:\phpstudy\jason\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs('[<span class="s...')
+#15 D:\phpstudy\jason\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('<span class="st...', '[<span class="s...', '[]')
+#16 D:\phpstudy\jason\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('<span class="st...', '[<span class="s...')
+#17 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(567): yii\BaseYii::createObject('<span class="st...', '[<span class="s...')
+#18 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('<span class="st...')
+#19 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('<span class="st...')
+#20 D:\phpstudy\jason\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#21 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 D:\phpstudy\jason\web\index.php(12): yii\base\Application->run()
+#23 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'imooc_shop'' in D:\phpstudy\jason\vendor\yiisoft\yii2\db\Connection.php:547
+Stack trace:
+#0 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#1 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#4 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#6 D:\phpstudy\jason\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#7 D:\phpstudy\jason\models\Category.php(105): yii\db\ActiveQuery->all()
+#8 D:\phpstudy\jason\controllers\CommonController.php(15): app\models\Category::getMenu()
+#9 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Object.php(107): app\controllers\CommonController->init()
+#10 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Controller.php(84): yii\base\Object->__construct('[]')
+#11 [internal function]: yii\base\Controller->__construct('<span class="st...', Object(yii\web\Application), '[]')
+#12 D:\phpstudy\jason\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs('[<span class="s...')
+#13 D:\phpstudy\jason\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('<span class="st...', '[<span class="s...', '[]')
+#14 D:\phpstudy\jason\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('<span class="st...', '[<span class="s...')
+#15 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(567): yii\BaseYii::createObject('<span class="st...', '[<span class="s...')
+#16 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('<span class="st...')
+#17 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('<span class="st...')
+#18 D:\phpstudy\jason\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#19 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 D:\phpstudy\jason\web\index.php(12): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2017-07-10 08:57:49 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\phpstudy\\phpstudy\\MySQL\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpstudy\\phpstudy\\php\\php-5.4.45;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/phpstudy/php/php-5.5.38/'
+    '_FCGI_SHUTDOWN_EVENT_' => '460'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59547'
+    'SCRIPT_FILENAME' => 'D:/phpstudy/jason/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpstudy/jason/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpstudy/jason/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.jason.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.jason.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499677069.6449
+    'REQUEST_TIME' => 1499677069
+]
+2017-07-10 09:02:02 [127.0.0.1][-][vpt9b3guc69etuq1940qk9tpe2][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'istui' in 'where clause'' in D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 D:\phpstudy\jason\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 D:\phpstudy\jason\controllers\CommonController.php(39): yii\db\ActiveQuery->all()
+#5 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Object.php(107): app\controllers\CommonController->init()
+#6 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Controller.php(84): yii\base\Object->__construct('[]')
+#7 [internal function]: yii\base\Controller->__construct('<span class="st...', Object(yii\web\Application), '[]')
+#8 D:\phpstudy\jason\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs('[<span class="s...')
+#9 D:\phpstudy\jason\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('<span class="st...', '[<span class="s...', '[]')
+#10 D:\phpstudy\jason\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('<span class="st...', '[<span class="s...')
+#11 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(567): yii\BaseYii::createObject('<span class="st...', '[<span class="s...')
+#12 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('<span class="st...')
+#13 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('<span class="st...')
+#14 D:\phpstudy\jason\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#15 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\phpstudy\jason\web\index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'istui' in 'where clause'
+The SQL being executed was: SELECT * FROM `shop_product` WHERE istui = "1" and ison = "1" ORDER BY `createtime` DESC LIMIT 3' in D:\phpstudy\jason\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 D:\phpstudy\jason\vendor\yiisoft\yii2\db\Query.php(210): yii\db\Command->queryAll()
+#3 D:\phpstudy\jason\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 D:\phpstudy\jason\controllers\CommonController.php(39): yii\db\ActiveQuery->all()
+#5 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Object.php(107): app\controllers\CommonController->init()
+#6 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Controller.php(84): yii\base\Object->__construct('[]')
+#7 [internal function]: yii\base\Controller->__construct('<span class="st...', Object(yii\web\Application), '[]')
+#8 D:\phpstudy\jason\vendor\yiisoft\yii2\di\Container.php(368): ReflectionClass->newInstanceArgs('[<span class="s...')
+#9 D:\phpstudy\jason\vendor\yiisoft\yii2\di\Container.php(153): yii\di\Container->build('<span class="st...', '[<span class="s...', '[]')
+#10 D:\phpstudy\jason\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('<span class="st...', '[<span class="s...')
+#11 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(567): yii\BaseYii::createObject('<span class="st...', '[<span class="s...')
+#12 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('<span class="st...')
+#13 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('<span class="st...')
+#14 D:\phpstudy\jason\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#15 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\phpstudy\jason\web\index.php(12): yii\base\Application->run()
+#17 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'istui' in 'where clause'
+)
+
+2017-07-10 09:02:00 [127.0.0.1][-][vpt9b3guc69etuq1940qk9tpe2][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\phpstudy\\phpstudy\\MySQL\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpstudy\\phpstudy\\php\\php-5.4.45;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/phpstudy/php/php-5.5.38/'
+    '_FCGI_SHUTDOWN_EVENT_' => '460'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59569'
+    'SCRIPT_FILENAME' => 'D:/phpstudy/jason/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpstudy/jason/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpstudy/jason/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.jason.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.jason.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499677320.6803
+    'REQUEST_TIME' => 1499677320
+]
+2017-07-10 09:20:00 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index/product/index".' in D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\phpstudy\jason\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('index/product/i...', Array)
+#1 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy\jason\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpstudy\jason\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy\jason\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-07-10 09:20:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/product/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vpt9b3guc69etuq1940qk9tpe2'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\phpstudy\\phpstudy\\MySQL\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpstudy\\phpstudy\\php\\php-5.4.45;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/phpstudy/php/php-5.5.38/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1764'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=index/product/index'
+    'QUERY_STRING' => 'r=index/product/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59953'
+    'SCRIPT_FILENAME' => 'D:/phpstudy/jason/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpstudy/jason/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpstudy/jason/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.jason.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=vpt9b3guc69etuq1940qk9tpe2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.jason.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499678400.1321
+    'REQUEST_TIME' => 1499678400
+]
+2017-07-10 09:20:06 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Index/product/index".' in D:\phpstudy\jason\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\phpstudy\jason\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('Index/product/i...', Array)
+#1 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpstudy\jason\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpstudy\jason\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\phpstudy\jason\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpstudy\jason\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-07-10 09:20:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'Index/product/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vpt9b3guc69etuq1940qk9tpe2'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\phpstudy\\phpstudy\\MySQL\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpstudy\\phpstudy\\php\\php-5.4.45;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/phpstudy/php/php-5.5.38/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1764'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=Index/product/index'
+    'QUERY_STRING' => 'r=Index/product/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59956'
+    'SCRIPT_FILENAME' => 'D:/phpstudy/jason/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpstudy/jason/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpstudy/jason/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.jason.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'PHPSESSID=vpt9b3guc69etuq1940qk9tpe2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.jason.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499678406.2864
+    'REQUEST_TIME' => 1499678406
+]
